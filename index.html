@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seu Nome">
+    <meta name="description" content="Site sobre natação, técnicas, e dicas com conteúdo de Creative Commons">
+    <title>Curso de Natação - Creative Commons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header class="p-5">
+        <h1>Aprenda Natação</h1>
+        <p>Conteúdo educativo sobre natação - Licenciado sob Creative Commons</p>
+
+        <nav class="container d-flex justify-content-between align-items-center">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#introducao">Introdução</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tecnicas">Técnicas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#beneficios">Benefícios</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold"><i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Introdução -->
+        <section id="introducao">
+            <h2>O que é Natação?</h2>
+            <p>A natação é um esporte aquático praticado em diferentes estilos e técnicas, com foco no movimento do corpo através da água. É uma habilidade importante para segurança aquática e também um excelente exercício físico.</p>
+            <img src="imagens/nadador1.jpg" alt="Nadador nadando" />
+        </section>
+
+        <!-- Técnicas -->
+        <section id="tecnicas">
+            <h2>Técnicas de Natação</h2>
+            <h3>Estilo Livre</h3>
+            <p>No estilo livre, o nadador pode escolher qualquer técnica, mas geralmente utiliza o crawl, uma das formas mais rápidas de natação.</p>
+            <h3>Peito</h3>
+            <p>A técnica de peito é mais tranquila e utilizada para quem está começando ou buscando resistência.</p>
+            <img src="imagens/nadador2.jpg" alt="Nadador praticando estilo peito" />
+        </section>
+
+        <!-- Benefícios -->
+        <section id="beneficios">
+            <h2>Benefícios da Natação</h2>
+            <p>A natação oferece diversos benefícios para a saúde, incluindo:</p>
+            <ul>
+                <li>Melhora a saúde cardiovascular</li>
+                <li>Fortalece os músculos</li>
+                <li>Ajuda a melhorar a flexibilidade</li>
+                <li>Reduz o estresse</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Galeria -->
+    <section id="galeria" class="my-5 pt-6 secao-tropicalia">
+        <h2 class="text-center pt-5">Galeria</h2>
+        <div class="container p-3 mt-3 fundo-galeria">
+            <div class="row justify-content-md-center">
+                <div class="col-md-4">
+                    <img src="vii.jpg" class="img-fluid rounded-5" loading="lazy">
+                </div>
+                <div class="col-md-4">
+                    <img src="ney.jpg" class="img-fluid rounded-5" loading="lazy">
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-md-center">
+                <div class="col-md-4">
+                    <img src="messi.png" class="img-fluid rounded-5" loading="lazy">
+                </div>
+                <div class="col-md-4">
+                    <img src="rodrygo.jpg" class="img-fluid rounded-5" loading="lazy">
+                </div>
+            </div>
+            <!-- Nova linha de imagens -->
+            <div class="row mt-4 justify-content-md-center">
+                <div class="col-md-4">
+                    <img src="img/nova-imagem.jpg" class="img-fluid rounded-5" loading="lazy" alt="Nova imagem na galeria">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container p-5 d-flex justify-content-center">
+            <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                <h2 class="mb-3">Entre em contato</h2>
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
