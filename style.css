@@ -51,7 +51,26 @@ footer {
 }
 
 .fundo-galeria img {
-    margin: 10px;
+    margin: 
+Na barra da esquerda do vscode, onde temos 3 quadrados juntos e um separado, é o lugar onde instalamos extensões:
+instalaremos o live preview, ou live server, eles possibilitaram ver o projeto ao editar o código em tempo real. 
+
+O comando class tem um uso próprio para o style.css ligando cada item visual do html á um estilo diferente do css.
+Para usar ele precisamos criar uma class, vá no style.css e digite "ponto" um nome de estilo e  chaves "{ }", pensando em como mudar os estilos de forma organizada para que você possa editar depois!
+Exemplo:
+
+.cor-padrão {
+ color: aquamarine;
+} 
+
+Nessa class eu defini uma cor padrão para usar no meu site, para aplicá-la podemos voltar no html, e digitar dentro dos outros comandos, um exemplo do meu texto:
+
+<h1 class = "cor-padrão"> Esse texto está na cor padrão <h1> 
+
+Para que isso funcione precisamos ir no <head></head> do html e digitar dentro dele:
+link, e ao dar enter aparecerá dentro dele: 
+<link rel="stylesheet" href="">
+E dentro de href="" iremos colocar o nome style.css, isso ligará os dois arquivos, html e css para que nosso estilo seja aplicado.10px;
     border-radius: 5px;
 }
 
@@ -87,4 +106,7 @@ footer {
         font-size: 2em;
     }
 }
-.cor-padrão {color: blueviolet;}
+.cor-padrão {color: rgb(105, 11, 192);
+    text-align: center;
+    
+}
